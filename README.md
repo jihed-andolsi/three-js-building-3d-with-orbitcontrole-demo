@@ -1,6 +1,6 @@
 # Threejs with orbit controle demo
 
-3d buildings three js demo
+3d building three js demo
 
 ---
 ## Requirements
