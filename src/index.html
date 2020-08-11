@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>THREE</title>
+</head>
+
+<body>
+    <style>
+        #loader-cnt{
+            position: absolute;
+            top: 46%;
+            left: 46%;
+            font-weight: bold;
+            font-size: 22px;
+            text-shadow: 5px 6px 11px #000;
+            color: #fff;
+        }
+    </style>
+    <div class="container">
+        <div class="col-md-12" id="root" style="height: 100vh"></div>
+    </div>
+    <button onclick="config3D.toggleCompass()">Show compass</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        var appI = null;
+        $(document).ready(function(){
+            appI = new App({
+                containerId: 'root',
+                object3D: 'rayen.obj',
+                objectMtl3D: 'rayen.mtl',
+                sounds: {
+                    background: './src/Assets/3d/sounds/darktimes.mp3',
+                    click : './src/Assets/3d/sounds/click.mp3'
+                },
+                objectDir3D: './src/Assets/3d/',
+                textures : {
+                    'texture_1':'./src/Assets/3d/maps/texture1.jpg',
+                    'texture_2':'./src/Assets/3d/maps/texture2.png',
+                    'texture_3':'./src/Assets/3d/maps/texture3.jpg',
+                    'texture_4':'./src/Assets/3d/maps/texture4.jpg',
+                    'texture_5':'./src/Assets/3d/maps/texture5.jpg',
+                    'texture_6':'./src/Assets/3d/maps/texture6.jpg',
+                    'texture_7':'./src/Assets/3d/maps/texture7.jpg',
+                    'texture_8':'./src/Assets/3d/maps/texture8.jpg',
+                    'texture_10':'./src/Assets/3d/maps/texture10.jpg',
+                    'texture_11':'./src/Assets/3d/maps/texture11.jpg',
+                    'texture_12':'./src/Assets/3d/maps/texture12.jpg',
+                    'texture_13':'./src/Assets/3d/maps/texture13.jpg',
+                    'texture_14':'./src/Assets/3d/maps/texture14.jpg',
+                    'texture_15':'./src/Assets/3d/maps/texture15.jpg',
+                    'texture_16':'./src/Assets/3d/maps/texture16.jpg',
+                    'texture_17':'./src/Assets/3d/maps/texture17.jpg',
+                    'texture_18':'./src/Assets/3d/maps/texture18.jpg',
+                    'texture_20':'./src/Assets/3d/maps/texture20.png',
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
